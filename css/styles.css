@@ -1,0 +1,552 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body{
+    background-color: #000;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+/* Style for rules for navigation area */
+nav{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    font-size: 1.2em;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child{
+    border-top: none;
+}
+
+nav li a{
+    display: block;
+    color: #fff;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile{
+    display: block;
+}
+
+.tablet-desktop{
+    display: none;
+}
+
+/* Style rules for main content */
+main{
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.tel-link{
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.cooking{
+    margin-left: 10%;
+}
+
+.action{
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+}
+
+#handheld, #standup, #bladeless{
+    margin: 0 2%;
+}
+
+.media-showcase {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+audio, video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.faq-section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.faq a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}
+
+#spc{
+    background-color: #f9f9f9;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+}
+
+#about-us{
+    background-color: #f9f9f9;
+    padding: 3%;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#founders{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.founder-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    object-fit: cover;
+}
+
+
+#ceo{
+    text-align: center;
+}
+
+#ceo p{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+p{
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+strong{
+    color: #333;
+}
+
+
+.product-image{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.product-image:hover{
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#product-of-the-week{
+    background-color: #f2f2f2; /* Light background color */
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 2% 0;
+}
+
+#product-of-the-week h1{
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+#weekly-sales{
+    background-color: #fff;
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sale-products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-sale{
+    width: 45%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-sale:hover{
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.product-sale img{
+    max-height: 200px; /* Ensures all product images have the same height */
+    object-fit: contain;
+}
+
+#customer-guarantee{
+    background-color: #e6ffe6; /* Light green background for a reassuring feel */
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#customer-guarantee p{
+    font-size: 1.2em;
+    color: #333;
+}
+
+#customer-guarantee strong{
+    font-size: 1.4em;
+    color: #006600; /* Green color for emphasis */
+}
+
+#customer-guarantee img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.external-link{
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.external-link:hover{
+    color: #ff9900; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.round{
+    border-radius: 8px;
+}
+
+#why-choose-us {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#why-choose-us h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#why-choose-us ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#why-choose-us li {
+    width: 30%;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+#why-choose-us li:hover {
+    transform: translateY(-10px);
+}
+
+.feature-image {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#why-choose-us li p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#example{
+    display: none;
+}
+
+.viewex{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print{
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header{
+        position: static;
+        padding-bottom: 2%;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li{
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child{
+        border-right: none;
+    }
+
+    nav li a{
+        padding: 0.1em 0.75em;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    main ul{
+        margin: 0 0 4% 10%;
+    }
+
+    #features{
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background: linear-gradient(to right, #ccc, #fff);
+        background-color: #f2f2f2;
+        padding: 1% 2%;
+        
+    }
+    
+    #features dt{
+        font-weight: bold;
+    }
+    
+    #features dd{
+        padding: 0.5em 1% 2% 0;
+    }
+
+    .tel-num{
+        font-size: 1.25em;
+    }
+
+    .map{
+        width: 600px;
+        height: 450px;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print{
+    /* Desktop Viewport: Style rule for header */
+    header{
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav{
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    nav li{
+        border: none;
+    }
+
+    nav li a{
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover{
+        color: #000;
+        background-color: #fff;
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main{
+        clear: left;
+    }
+
+    main h1{
+        font-size: 1.8em;
+    }
+
+    #handheld, #standup, #bladeless{
+        font-size: small;
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #product-of-the-week, #weekly-sales, #customer-guarantee{
+        width: 45%; /* Ensure these sections are aligned properly on large screens */
+        float: left;
+        margin: 2%;
+    }
+
+    #features{
+        clear: left;
+    }
+
+    #about-us{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px){
+    #container{ 
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Print */
+@media print{
+    body{
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.external-link{
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact .contact-email-link{
+    color: #666600;
+    text-decoration: none;
+}
+
+.map{
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+
+/* Style rules for footer content */
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a{
+    color: #fff;
+    text-decoration: none;
+}
